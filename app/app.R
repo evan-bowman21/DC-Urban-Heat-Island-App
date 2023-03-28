@@ -132,6 +132,14 @@ ui <- fluidPage(
                  "HEI = Heat Exposure Index. Includes ambient air temperatures, impervious survaces and lack of canopy cover",tags$br(),
                  "HSEI = Heat Sensitivity Exposure Index. A composite index of both HSI and HEI.",tags$br()
                )),
+      tabPanel("Mapping",
+               sidebarLayout(
+                 sidebarPanel(varSelectInput("var_map", "What metric?", data = heat_quant, selected = "TOTALPOP"),
+                              checkboxInput("cooling", "Show DC Cooling Centers", value = FALSE),
+                              checkboxInput("trees", "Show DC Tree Data?", value = FALSE)),
+                 mainPanel(leafletOutput("map_plot", height = "600px"))
+               )
+      ), # End tabPanel2
       tabPanel("Graphing",
                sidebarLayout(
                  sidebarPanel(
@@ -159,7 +167,7 @@ ui <- fluidPage(
                                 column(4, plotOutput("plot2")),
                                 column(4, plotOutput("plot3")),
                                 column(4, plotOutput("plot4"))))
-                   )))), #End tabPanel
+                   )))), #End tabPanel3
       tabPanel("Regression Analysis",
                sidebarLayout(
                  sidebarPanel(width=3,
@@ -191,15 +199,7 @@ ui <- fluidPage(
                                        )
                  )      
                  )
-               )),#End tabPanel2
-      tabPanel("Mapping",
-               sidebarLayout(
-                 sidebarPanel(varSelectInput("var_map", "What metric?", data = heat_quant, selected = "TOTALPOP"),
-                              checkboxInput("cooling", "Show DC Cooling Centers", value = FALSE),
-                              checkboxInput("trees", "Show DC Tree Data?", value = FALSE)),
-                 mainPanel(leafletOutput("map_plot", height = "600px"))
-               )
-      ), # End tabPanel3
+               )),#End tabPanel4
       tabPanel("Working Data",
                mainPanel(
                  tabsetPanel(
