@@ -105,12 +105,24 @@ Heat Sensitivity Exposure Data was gathered from Open Data DC and contains varia
 
 
 When the temperature or heat index in the District reaches 95 degrees, District Government, through the Department of Human Services (DHS) and the Homeland Security and Emergency Management Agency (HSEMA), will implement the Heat Emergency Plan and activate cooling centers for residents to seek relief. We provide locations, name of center, phone number and hours of cooling centers. 
-Data comes from Open Data DC
+Data comes from Open Data DC.
 
 #### DC Tree Data
 
 DDOT's Urban Forestry Division (UFD) is the primary steward of Washington DC's ~170,000 public trees and has a mission of keeping this resource healthy, safe, & growing! Trees provide many benefits to the populations such as improving air and water quality and creates habitat for local fauna. Importantly trees are also critical for keeping the city cooler. 
-Data comes from Open Data DC
+Data comes from Open Data DC.
+
+### <span style="color: blue;">Mapping Analysis Inputs, Controls, and Outputs:</span>
+
+#### Inputs
+
+The inputs of the app's mapping section are the quantitative variables of the Heat Sensitivity Exposure Data which identifies quantitative measurements of socioeconomic variables and health variables for DC census tracts. There are also two options to layer more data on top of the HSEI data. The user will have the option to choose to add locations of DC cooling centers or tree locations to the map. 
+
+#### Output
+
+Based on what metric the user chooses, the app will return a map of DC census tracts with a color scale of the specific metric. The user will be able to click on a specific census track to obtain the track number. If cooling center is layered, data points of DC's cooling centers will be visible. Clicking on any given point will create a popup label including the name, location, hours, and center type. If trees are selected, a random sample of DC tree data will be visible. Clicking on any given point will create a popup label that includes the tree type, location, owner, and condition of the tree. 
+
+![](../vignettes/Mapping_Capture.jpeg){#id .class width=85% height=85%}
 
 ### <span style="color: blue;">Graphical Analysis Inputs, Controls, and Outputs:</span>
 
@@ -141,17 +153,7 @@ There are three subsets of the results. First, we have "Model Summary", which is
 
 ![](../vignettes/Regression_Capture.jpeg){#id .class width=85% height=85%}
 
-### <span style="color: blue;">Mapping Analysis Inputs, Controls, and Outputs:</span>
 
-#### Inputs
-
-The inputs of the app's mapping section are the quantitative variables of the Heat Sensitivity Exposure Data which identifies quantitative measurements of socioeconomic variables and health variables for DC census tracts. There are also two options to layer more data on top of the HSEI data. The user will have the option to choose to add locations of DC cooling centers or tree locations to the map. 
-
-#### Output
-
-Based on what metric the user chooses, the app will return a map of DC census tracts with a color scale of the specific metric. The user will be able to click on a specific census track to obtain the track number. If cooling center is layered, data points of DC's cooling centers will be visible. Clicking on any given point will create a popup label including the name, location, hours, and center type. If trees are selected, a random sample of DC tree data will be visible. Clicking on any given point will create a popup label that includes the tree type, location, owner, and condition of the tree. 
-
-![](../vignettes/Mapping_Capture.jpeg){#id .class width=85% height=85%}
 
 ## References 
 “Cooling Centers - District of Columbia.” Accessed December 10, 2022. https://opendata.dc.gov/datasets/cooling-centers-district-of-columbia/explore?location=38.903124,-77.008453,12.75.
