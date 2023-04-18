@@ -1,10 +1,6 @@
 # DC Urban Heat Island App
 
-This was a collaborative effort to fullfill the final project requirements for DATA 613 at American University. Group members are:
-Evan Bowman
-Karl VanZaborn
-ChihChin Yang
-SzuWei Fu
+This was a collaborative effort to fullfill the final project requirements for DATA 613 at American University. Group members are Karl VanZaborn, ChihChin Yang, SzuWei Fu, and myself
 
 ## Description
 Extreme heat in urban environments pose serious health and justice challenges to local government and civil society groups. The objective of this app is to provide a tool to analyzes heat sensitivities across DC census tracts. We provide a tool that allows users to statistically model the correlates of the Heat Sensitivity Exposure Index (HSEI), Heat Sensitivity Index (HSI) and Heat Exposure Index (HEI). A user can find the relevant socio-demographic and health correlates of these extreme heat metrics on census tract basis.
